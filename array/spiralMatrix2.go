@@ -1,4 +1,4 @@
-package mix
+package main
 
 func Spiral(n int) [][]int {
 	limit := 1

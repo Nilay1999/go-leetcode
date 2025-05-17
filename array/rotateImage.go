@@ -1,4 +1,4 @@
-package mix
+package main
 
 func RotateImage(arr [][]int) [][]int {
 	for i := 0; i < len(arr); i++ {

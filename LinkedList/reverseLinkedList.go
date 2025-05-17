@@ -1,4 +1,4 @@
-package mix
+package main
 
 func ReverseList(list *ListNode) *ListNode {
 

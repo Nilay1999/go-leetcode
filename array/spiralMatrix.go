@@ -1,4 +1,4 @@
-package mix
+package main
 
 func SpiralMatrix(input [][]int) []int {
 	res := []int{}

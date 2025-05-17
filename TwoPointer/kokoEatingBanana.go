@@ -1,4 +1,4 @@
-package mix
+package main
 
 func findMax(arr []int) int {
 	if len(arr) == 0 {

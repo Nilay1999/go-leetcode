@@ -1,4 +1,4 @@
-package mix
+package main
 
 type List struct {
 	Head *ListNode

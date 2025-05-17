@@ -1,3 +1,3 @@
-module github.com/Nilay1999/practice
+module practice
 
 go 1.20

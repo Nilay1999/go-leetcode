@@ -1,4 +1,4 @@
-package mix
+package main
 
 type ListNode struct {
 	Val  int

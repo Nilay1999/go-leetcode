@@ -1,4 +1,4 @@
-package mix
+package main
 
 func MaxSubArray(arr []int) int {
 	total, max := 0, -1000000

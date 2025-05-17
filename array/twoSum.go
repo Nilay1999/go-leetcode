@@ -1,4 +1,4 @@
-package mix
+package main
 
 func TwoSum(array []int, target int) [2]int {
 	sub := 0

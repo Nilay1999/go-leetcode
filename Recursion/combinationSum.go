@@ -1,4 +1,4 @@
-package mix
+package main
 
 func CombinationSum(candidates []int, target int) [][]int {
 	ans, idx, temp := [][]int{}, 0, []int{}

@@ -1,10 +1,10 @@
-package mix
+package main
 
 import (
 	"math"
 )
 
-func Container(arr []float64) float64 {
+func WaterContainer(arr []float64) float64 {
 	max := 0.0
 	l, r := 0, len(arr)-1
 	for l < r {

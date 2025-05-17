@@ -1,4 +1,4 @@
-package mix
+package main
 
 func contains(nums []int, element int) bool {
 	for _, val := range nums {
