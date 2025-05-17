@@ -1,8 +1,6 @@
-package main
+package mix
 
-import "fmt"
-
-func spiral(n int) [][]int {
+func Spiral(n int) [][]int {
 	limit := 1
 	res := make([][]int, n)
 	for i := range res {
@@ -35,10 +33,4 @@ func spiral(n int) [][]int {
 	}
 
 	return res
-}
-
-func main() {
-	input := 4
-	res := spiral(input)
-	fmt.Print(res)
 }

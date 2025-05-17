@@ -1,11 +1,10 @@
-package main
+package mix
 
 import (
-	"fmt"
 	"math"
 )
 
-func container(arr []float64) float64 {
+func Container(arr []float64) float64 {
 	max := 0.0
 	l, r := 0, len(arr)-1
 	for l < r {
@@ -18,9 +17,4 @@ func container(arr []float64) float64 {
 		}
 	}
 	return max
-}
-
-func main() {
-	input := []float64{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	fmt.Print(container(input))
 }

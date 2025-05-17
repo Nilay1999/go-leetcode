@@ -1,8 +1,6 @@
-package main
+package mix
 
-import "fmt"
-
-func rotateImage(arr [][]int) [][]int {
+func RotateImage(arr [][]int) [][]int {
 	for i := 0; i < len(arr); i++ {
 		for j := i + 1; j < len(arr[0]); j++ {
 			temp := arr[i][j]
@@ -19,15 +17,4 @@ func rotateImage(arr [][]int) [][]int {
 		}
 	}
 	return arr
-}
-
-func main() {
-	input := [][]int{
-		{1, 2, 3},
-		{4, 5, 6},
-		{7, 8, 9},
-	}
-
-	fmt.Print(rotateImage(input))
-
 }

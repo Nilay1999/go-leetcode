@@ -1,17 +1,10 @@
-package main
-
-import "fmt"
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+package mix
 
 type List struct {
-	head *ListNode
+	Head *ListNode
 }
 
-func addTwoList(l1 *ListNode, l2 *ListNode) *ListNode {
+func AddTwoList(l1 *ListNode, l2 *ListNode) *ListNode {
 	ls := &ListNode{0, nil}
 	temp, carry := ls, 0
 	for l1 != nil || l2 != nil {
@@ -37,17 +30,4 @@ func addTwoList(l1 *ListNode, l2 *ListNode) *ListNode {
 		temp.Next = &ListNode{carry, nil}
 	}
 	return ls.Next
-}
-
-func main() {
-
-	l1 := &ListNode{
-		Val:  1,
-		Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: nil}},
-	}
-	l2 := &ListNode{
-		Val:  2,
-		Next: &ListNode{Val: 3, Next: &ListNode{Val: 7, Next: nil}},
-	}
-	fmt.Print(addTwoList(l1, l2))
 }

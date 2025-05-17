@@ -1,11 +1,11 @@
-package main
+package mix
 
 import (
 	"fmt"
 	"strings"
 )
 
-func maxVowels(s string, k int) int {
+func MaxVowels(s string, k int) int {
 	mp := map[string]int{"a": 1, "e": 1, "i": 1, "o": 1, "u": 1}
 	arr := strings.Split(s, ",")
 	count := 0
@@ -22,10 +22,4 @@ func maxVowels(s string, k int) int {
 
 	}
 	return glob
-}
-
-func main() {
-	input, k := "abciiidef", 3
-	res := maxVowels(input, k)
-	fmt.Print(res)
 }

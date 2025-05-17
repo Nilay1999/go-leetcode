@@ -1,8 +1,6 @@
-package main
+package mix
 
-import "fmt"
-
-func spiralMatrix(input [][]int) []int {
+func SpiralMatrix(input [][]int) []int {
 	res := []int{}
 	top, bottom, left, right := 0, len(input)-1, 0, len(input[0])-1
 	for top <= bottom && left <= right {
@@ -30,9 +28,4 @@ func spiralMatrix(input [][]int) []int {
 	}
 
 	return res
-}
-
-func main() {
-	input := [][]int{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}
-	fmt.Print(spiralMatrix(input))
 }

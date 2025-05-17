@@ -1,8 +1,6 @@
-package main
+package mix
 
-import "fmt"
-
-func combinationSum(candidates []int, target int) [][]int {
+func CombinationSum(candidates []int, target int) [][]int {
 	ans, idx, temp := [][]int{}, 0, []int{}
 	var recursion func(idx int, target int, temp []int)
 	recursion = func(idx int, target int, temp []int) {
@@ -22,11 +20,4 @@ func combinationSum(candidates []int, target int) [][]int {
 	}
 	recursion(idx, target, temp)
 	return ans
-}
-
-func main() {
-	candidates := []int{2, 3, 6, 7}
-	target := 7
-	fmt.Print(combinationSum(candidates, target))
-
 }

@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package mix
 
 func contains(nums []int, element int) bool {
 	for _, val := range nums {
@@ -11,7 +9,7 @@ func contains(nums []int, element int) bool {
 	return false
 }
 
-func permute(nums []int) [][]int {
+func Permute(nums []int) [][]int {
 	ans := [][]int{}
 
 	var recursion func(temp []int)
@@ -31,9 +29,4 @@ func permute(nums []int) [][]int {
 	}
 	recursion([]int{})
 	return ans
-}
-
-func main() {
-	input := []int{1, 2, 3}
-	fmt.Print(permute(input))
 }

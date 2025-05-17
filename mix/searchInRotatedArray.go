@@ -1,13 +1,8 @@
-package main
+package mix
 
-import (
-	"fmt"
-	"math"
-)
-
-func searchInRotatedArray(nums []int, target int) int {
+func SearchInRotatedArray(nums []int, target int) int {
 	l, r := 0, len(nums)-1
-	mid := int(math.Floor(float64((l + r) / 2)))
+	mid := int(float64((l + r) / 2))
 	for l <= r {
 		if nums[mid] == target {
 			return mid
@@ -32,11 +27,4 @@ func searchInRotatedArray(nums []int, target int) int {
 	}
 
 	return -1
-}
-
-func main() {
-
-	input := []int{4, 5, 6, 7, 0, 1, 2}
-	target := 3
-	fmt.Print(searchInRotatedArray(input, target))
 }

@@ -1,8 +1,6 @@
-package main
+package mix
 
-import "fmt"
-
-func maxSubArray(arr []int) int {
+func MaxSubArray(arr []int) int {
 	total, max := 0, -1000000
 	for i := 0; i < len(arr); i++ {
 		total += arr[i]
@@ -14,9 +12,4 @@ func maxSubArray(arr []int) int {
 		}
 	}
 	return max
-}
-
-func main() {
-	input := []int{-1}
-	fmt.Print(maxSubArray(input))
 }

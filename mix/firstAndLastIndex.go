@@ -1,8 +1,8 @@
-package main
+package mix
 
 import "fmt"
 
-func firstAndLastIndex(res []int) []int {
+func FirstAndLastIndex(res []int) []int {
 	max, total := -99999, 0
 	start, end, glob := 0, 0, 0
 
@@ -21,10 +21,4 @@ func firstAndLastIndex(res []int) []int {
 	}
 	fmt.Print(max)
 	return []int{glob, end}
-}
-
-func main() {
-	input := []int{5, 4, -1, 7, 8}
-	//input := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
-	fmt.Print(firstAndLastIndex(input))
 }

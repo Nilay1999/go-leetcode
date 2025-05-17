@@ -1,11 +1,10 @@
-package main
+package mix
 
 import (
-	"fmt"
 	"sort"
 )
 
-func threeSum(arr []int) [][]int {
+func ThreeSum(arr []int) [][]int {
 	total := 0
 	sort.Ints(arr)
 	res := [][]int{}
@@ -31,10 +30,4 @@ func threeSum(arr []int) [][]int {
 		}
 	}
 	return res
-}
-
-func main() {
-	arr := []int{-1, 0, 1, 2, -1, -4}
-	ans := threeSum(arr)
-	fmt.Print(ans)
 }
