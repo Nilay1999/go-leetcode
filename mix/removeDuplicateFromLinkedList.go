@@ -7,8 +7,7 @@ type ListNode struct {
 
 func RemoveDuplicate(head *ListNode) *ListNode {
 	temp := &ListNode{Next: head}
-	prev := &ListNode{0, nil}
-	prev = temp
+	prev := temp
 	for head != nil {
 		if head.Next != nil && head.Val == head.Next.Val {
 			for head.Next != nil && head.Val == head.Next.Val {

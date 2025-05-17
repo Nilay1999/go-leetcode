@@ -2,9 +2,8 @@ package mix
 
 func ReverseBetween(head *ListNode, left int, right int) *ListNode {
 	temp := &ListNode{Next: head}
-	prev := &ListNode{0, nil}
-	prev = temp
-	ptr := &ListNode{0, nil}
+	prev := temp
+	ptr := &ListNode{}
 	ptr = head
 	l := 1
 
